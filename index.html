@@ -9,9 +9,10 @@
   <meta name="description" content="The Official TEDx MITSG">
   <meta name="keywords" content="Tedx, tedxmits, mitsgwalior">
   <link href="ted.css" type="text/css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>TEDxMITSG</title>
 </head>
-<body>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
   <!--Navigation BAr-->
   <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
@@ -23,7 +24,7 @@
       </button>
       <p class="navbar-brand navbar-left" href="#"><img style="height:35px"src="images/TEDxMITSG5.png" alt="logo"></p>
     </div>
-    
+
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#">Home</a></li>
@@ -39,7 +40,7 @@
 </nav>
 <!--middle-->
   <div class="container text-center">
-      <h2><span style="color:red;">TEDx</span>MITS Gwalior</h2>
+      <h2><strong><span style="color:red;">TEDx</span></strong>MITS Gwalior</h2>
       <p>Bring Innovation</p>
 </br>
         <div class="row">
@@ -112,5 +113,27 @@ Here, at TEDx MITSG, as engineering students who yearn to design and build a bet
     </div>
 </div>
 </div>
+<hr>
+<!--footer-->
+<footer class="text-center">
+  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br><br>
+  <i style="font-size:30px"class="fa fa-instagram" aria-hidden="true"></i>&nbsp;&nbsp;
+<i style="font-size:30px"class="fa fa-facebook" aria-hidden="true"></i>&nbsp;&nbsp;
+</footer>
+
+<script>
+$(document).ready(function(){
+    // Initialize Tooltip
+    $('[data-toggle="tooltip"]').tooltip();
+})
+</script>
+<br>
+<section>
+<div class="text-center">
+<i class="fa fa-copyright" aria-hidden="true"></i>Madhav Institute Of Technology And Science,Gwalior
+</div>
+</section>
 </body>
 </html>

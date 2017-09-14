@@ -32,9 +32,19 @@
 }
 
 .navbar-nav li.active a {
-    color: #fff !important;
+    color: white !important;
     background-color:#29292c !important;
 }
 .navbar-default .navbar-toggle {
     border-color: transparent;
+}
+.open .dropdown-toggle {
+    color: white ;
+    background-color: #555 !important;
+}
+.dropdown-menu li a {
+    color: white !important;
+}
+.dropdown-menu li a:hover {
+    background-color: red !important;
 }
