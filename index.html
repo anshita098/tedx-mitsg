@@ -12,26 +12,104 @@
   <title>TEDxMITSG</title>
 </head>
 <body>
-  <div class="container text-center">
-      <h2>TEDxMITS Gwalior</h2>
-      <p><strong>-Theme-<strong></p>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-4">
-        <p><strong>Name</strong></p><br>
-        <img src="bandmember.jpg" alt="Random Name">
-      </div>
-      <div class="col-sm-4">
-        <p><strong>Name</strong></p><br>
-        <img src="bandmember.jpg" alt="Random Name">
-      </div>
-      <div class="col-sm-4">
-        <p><strong>Name</strong></p><br>
-        <img src="bandmember.jpg" alt="Random Name">
-      </div>
+  <!--Navigation BAr-->
+  <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbaar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <img src="" alt="mitslogo">
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Speakers</a></li>
+        <li><a href="#">Sponsors</a></li>
+        <li><a href="#">Team</a></li>
+        <li><a href="#">Find US</a></li>
+      </ul>
     </div>
   </div>
+</nav>
+
+<!--middle-->
+  <div class="container text-center">
+      <h2><span style="color:red;">TEDx</span>MITS Gwalior</h2>
+      <p>Bring Innovation</p>
+</br>
+        <div class="row">
+  <div class="col-sm-6">
+    <p><strong>Video</strong></p><br>
+
+  </div>
+
+  <div class="col-sm-6">
+
+    <div class="scroll">
+    <p>We live in a world where ideas float even in thin air and with the fast emerging wireless and infrared technologies- they literally do. India is not exempted from this surge as we are coming up with indigenous versions of products, services and machines which are way more cost-effective.
+The future is driven by innovation which in turn is fueled by ideas and that is why events like TED are important because you get exposure to different fields and myriad of ideas. TED Talks are powerful and capable of influencing masses. We know that necessity is the mother of all inventions, but ideas are the father and TED talks create an environment of looking into our minds producing ideas that can benefit us, our life style and the lives of those around us.
+Here, at TEDx MITSG, as engineering students who yearn to design and build a better and improved world, our theme "Ideas Driving Innovation" is the best way to create a culture that fosters innovation and helps us organize new ideas in a way that empowers us to act on them.</p>
+</div>
+  </div>
+</div>
+  </div>
+<hr>
+<!--Contact details-->
+
+  <div class="container">
+    <h3 class="text-center">Contact</h3>
+    <div class="row test">
+      <div class="col-md-4">
+        <p>Shashwat Shrivastava</p>
+        <p><span class="glyphicon glyphicon-phone">8982406982</span></p>
+        <p><span class="glyphicon glyphicon-envelope">shashwat@gmail.com</span></p>
+      </div>
+        <div class="col-md-8">
+            <form action="#" method="post">
+          <div class="row">
+            <div class="col-sm-4 form-group">
+              <input class="form-control" id="name" name="name" placeholder="Full Name" type="text" required>
+            </div>
+            <div class="col-sm-4 form-group">
+              <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+            </div>
+            <div class="col-sm-4 form-group">
+              <input class="form-control" id="mobileno" name="mobileno" placeholder="Mobile-no" type="no" required>
+            </div>
+          </div>
+          <textarea class="form-control" id="comments" name="message" placeholder="Message" rows="5"></textarea>
+          <div class="row">
+            <div class="col-md-12 form-group">
+              <button class="btn" type="submit">Send</button>
+            </div>
+          </div>
+          </form>
+        </div>
+
+    </div>
+  </div>
+<hr>
+<!--Google MAPS-->
+<div class="container">
+<div class="row">
+    <div class="col-md-12">
+      <div id="googleMap"></div>
+      <script>
+      function myMap() {
+      var myCenter = new google.maps.LatLng(26.231973,78.205640);
+      var mapProp = {center:myCenter, zoom:16, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
+      var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+      var marker = new google.maps.Marker({position:myCenter});
+      marker.setMap(map);
+      }
+      </script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-psz4kqTRf4d7Y2OCJp-9RZJOI30kGos&callback=myMap"></script>
+    </div>
+</div>
 </div>
 </body>
 </html>
